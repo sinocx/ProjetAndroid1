@@ -19,12 +19,10 @@ public class SecondActivity extends AppCompatActivity {
     }
     private void fillSecondActivity(Vehicle vehicle){
         TextView txtTitle = (TextView) findViewById(R.id.titleDetails);
-        TextView txtName = (TextView) findViewById(R.id.titleDetails);
-        TextView txtDesc = (TextView) findViewById(R.id.titleDetails);
-        TextView txtLenght = (TextView) findViewById(R.id.titleDetails);
-        TextView txtPassenger = (TextView) findViewById(R.id.titleDetails);
+        TextView txtLength = (TextView) findViewById(R.id.titleLenght2);
         TextView txtCargo = (TextView) findViewById(R.id.titleCapacity);
         txtTitle.setText(vehicle.getManufacturer());
         txtCargo.setText(vehicle.getCargo_capacity());
+        txtLength.setText(vehicle.getLength());
     }
 }
