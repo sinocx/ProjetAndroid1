@@ -8,4 +8,8 @@ public class RestVehicleResponse {
 
     private int count;
     private List<Vehicle> results;
+
+    public List<Vehicle> getResults() {
+        return results;
+    }
 }
